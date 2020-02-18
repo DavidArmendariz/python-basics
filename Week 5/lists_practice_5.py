@@ -1,16 +1,23 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[4]:
+# In[11]:
 
 
 string1 = input()
 string2 = input()
-numbers1 = list(map(int, string1.split()))
-numbers2 = list(map(int, string2.split()))
-result = list(set(numbers1) & set(numbers2))
-for e in result:
-    print(e, end=" ")
+numbers1 = string1.split()
+numbers2 = string2.split()
+result = []
+for n1 in numbers1:
+    if n1 in numbers2:
+        result.append(n1)
+        continue
+if result:
+    for e in result:
+        print(e, end=" ")
+else:
+    print(" ")
 
 
 # In[ ]:
