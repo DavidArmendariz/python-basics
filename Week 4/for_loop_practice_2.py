@@ -1,0 +1,19 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+a = int(input())
+b = int(input())
+arr = range(a, b+1)
+for e in arr:
+    if e % 2 == 0:
+        print(e, end=" ")
+
+
+# In[ ]:
+
+
+
+
