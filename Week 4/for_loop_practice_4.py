@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
+# In[9]:
 
 
-numbers1 = input().split()
-numbers2 = input().split()
-intersection = tuple(map(int, [x for x in numbers1 if x in numbers2]))
+numbers_1 = list(map(int, input().split()))
+numbers_2 = list(map(int, input().split()))
+intersection = tuple(set(numbers_1) & set(numbers_2))
 print(intersection)
 
 
